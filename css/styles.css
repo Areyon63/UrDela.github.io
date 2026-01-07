@@ -1,7 +1,27 @@
-.title {
-    color: green;
+.header {
+  height: 110vh;
+  margin-top: -16px;
+  background: url(../img/phone5.jpg) no-repeat center;
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 80%, 50% 91%, 0 80%, 0 0);
 }
 
-li {
-    
+.header-top{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  height: 80px;
+  background: rgb(0, 0, 0, 69%);
+  
+  color: white;
+  
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
