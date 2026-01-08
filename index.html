@@ -12,40 +12,51 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <header class="header">
-           <div class="header__backround"></div>
-            <div class="header-top">
-                <a href="" class="logo">Правовой центр "МЕЖРЕГИОН"</a>
+       <div class="header-top">
+                <a href="" class="link logo block-center">Правовой&nbsp;центр&nbsp;"МЕЖРЕГИОН"</a>
                 <nav class="navigation">
-                    <ul class="menu">
+                    <ul class="menu block-center">
                         <li class="menu-element">
-                            <a class="menu-element__link active" href="">Home</a>
+                            <a class="block-center link menu-element__link active home" href="#home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+  <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+  <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+</svg>
+</a>
                         </li>
                         <li class="menu-element">
-                            <a class="menu-element__link" href="">About</a>
+                            <a class=" block-center link menu-element__link" href="#about-me">О&nbsp;нас</a>
                         </li>
                         <li class="menu-element">
-                            <a class="menu-element__link" href="">Achievment</a>
+                            <a class=" block-center link menu-element__link" href="#achievements">Достижения</a>
                         </li>
                         <li class="menu-element">
-                            <a class="menu-element__link" href="">Skills</a>
+                            <a class=" block-center link menu-element__link" href="#uslugy">Услуги</a>
                         </li>
                         <li class="menu-element">
-                            <a class="menu-element__link" href="">Work</a>
+                            <a class=" block-center link menu-element__link" href="#work">Работа</a>
                         </li>
                         <li class="menu-element">
-                            <a class="menu-element__link" href="">Interests</a>
+                            <a class=" block-center link menu-element__link" href="#experience">Опыт</a>
                         </li>
                         <li class="menu-element">
-                            <a class="menu-element__link" href="">Books</a>
+                            <a class=" block-center link menu-element__link" href="#books">Книги</a>
                         </li>
                         <li class="menu-element">
-                            <a class="menu-element__link" href="">Contact me</a>
+                            <a class=" block-center link menu-element__link" href="#contact-me">Связаться&nbsp;с&nbsp;нами</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="switcher">Ru/Eng</div>
+                <div class=" block-center num">
+                <button class ="switcher">+8&nbsp;903&nbsp;95&nbsp;400&nbsp;65</button>
+                <button class="switcher-2">+8&nbsp;913&nbsp;820&nbsp;78&nbsp;29</button> 
+                
+                </div>
+                
             </div>
+       
+        <header class="header" id ="home">
+           <div class="header__backround"></div>
+            
             <div class="header-center">
                <div class="header-center__wrapper">
                 <h1 class="name">Правовой&nbsp;центр&nbsp;"МЕЖРЕГИОН"</h1>
@@ -55,7 +66,7 @@
             </div>
         </header>
         <!--- Контент --->
-        <section class="about_me">
+        <section class="about_me" id="about-me">
             <div class="left">
                 <img src="****" alt="" />
             </div>
@@ -80,7 +91,7 @@
             </div>
         </section>
 
-        <section class="achievements">
+        <section class="achievements" id ="achievements">
             <h2 class="second-title">Достижения</h2>
             <ul class="achievements-list">
                 <li class="achievements-list__element">Достижение 1</li>
@@ -90,7 +101,7 @@
                 <li class="achievements-list__element">Достижение 5</li>
             </ul>
         </section>
-        <section class="uslugy">
+        <section class="uslugy" id="uslugy">
             <h2 class="second-title">Услуги</h2>
             <p class="section-description">Здесь перечислен спектр предоставляемых услуг.</p>
             <ul class="uslugy-filters">
@@ -128,7 +139,7 @@
             </div>
         </section>
 
-        <section class="work">
+        <section class="work" id = "work">
             <h2 class="second-title">Работа</h2>
             <div class="work-wrapper">
                 <div class="work-alement left">
@@ -204,7 +215,7 @@
                 </div>
             </div>
         </section>
-        <section class="experience">
+        <section class="experience" id="experience">
             <h2 class="second-title">Опыт</h2>
 
             <div class="experience-wrapper">
@@ -281,7 +292,7 @@
             </div>
         </section>
 
-        <section class="books">
+        <section class="books" id="books">
             <h2 class="second-title">Прочитанные книги</h2>
             <p class="section-description">Здесь указаны книги, которые помогли в работе.</p>
             <ul class="books-list">
@@ -293,7 +304,7 @@
             </ul>
         </section>
 
-        <section class="contact-me">
+        <section class="contact-me" id="contact-me">
             <form action="**" class="contact-me__form">
                 <div class="input-wrapper">
                     <label class="label" for="name">Имя</label>
@@ -317,10 +328,10 @@
         <footer>
             <ul class="socials">
                 <li class="social-element">
-                    <a href="" class="social-element__link">WH</a>
+                    <a href="" class="link social-element__link">WH</a>
                 </li>
                 <li class="social-element">
-                    <a href="" class="social-element__link">TG</a>
+                    <a href="" class="link social-element__link">TG</a>
                 </li>
             </ul>
             <p class="footer-about">&copy;&nbsp;Еремин&nbsp;Сергей&nbsp;Николаевич&nbsp;</p>
