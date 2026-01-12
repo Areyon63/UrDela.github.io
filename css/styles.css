@@ -1,7 +1,10 @@
 /* Переменные */
 
+
 :root {
   --color-green: #1750ad;
+  --color-text:#484848 ;
+  --color-gray: #9e9e9e;
   
 }
 
@@ -38,7 +41,7 @@ justify-content: center;
   height: 110vh;
   bottom: 80px;
   margin-top: -16px;
-  background: url(../img/phone5.jpg) no-repeat center;
+  background: url(../img/phone5.webp) no-repeat center;
   background-size: cover;
   clip-path: polygon(100% 0, 100% 80%, 50% 91%, 0 80%, 0 0);
 }
@@ -244,10 +247,59 @@ justify-content: center;
   
 }
   
+/* О НАС */
+.about_me {
   
   
+  display: flex;
+  
+}
+
+.about-me__title{
+  font-size: 30px;
+  
+}
+.gray{
+  color: var(--color-gray)!important;
+  
+}
+.about-me__discraption{
+  font-size: 20px;
+  color: var(--color-text);
+  margin-bottom: 15px;
+}
 
 
+
+.about_me .left {
+  flex: 1 1 30%;
+  padding-right: 40px;
+  
+  
+  
+  
+}
+
+
+.about_me .right {
+  flex: 1 1 70%;
+  
+  
+  
+  
+  
+}
+
+.about-me__image{
+  width: 320px;
+  height: 546px; 
+  margin-left: auto;
+  border-radius: 10px;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0, 69%));
+  
+  
+  
+}
 
 
 
