@@ -9,7 +9,7 @@
   --color-text:#484848 ;
   --color-gray: #9e9e9e;
   --color-black:#262626;
-  --backround-grey: #e1e1e1;
+  --backround-grey: rgb(225, 225, 225, .3);
   
 }
 
@@ -510,6 +510,70 @@ height: 24px;
 .section-gray{
   background-color: var(--backround-grey);
   
+}
+
+/** Секция достижения **/
+
+.achievements {
+  flex-direction: column;
+  padding: 50px 0;
+  position: relative;
+  
+}
+.achievements-list{
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+  
+  
+}
+
+.achievements-list__view{
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  
+}
+
+.achievements-list__element{
+  flex: 1 1 33%;
+  
+}
+
+.achievements-list__image{
+  width: 100%;
+  max-width: 250px;
+  
+  
+}
+.achievements:before,
+.achievements:after{
+  
+  content: "";
+  position: absolute;
+  border: 100px solid transparent;
+  
+  
+  
+}
+  
+.achievements:before{
+  border-top: 30px solid #ffff;
+  top: 0;
+  
+  
+}
+.achievements:after{
+  border-top: 40px solid var(--backround-grey);
+  bottom: -140px;
+  
+  
+}
+
+/* Секция услуги*/
+.uslugy{
+  padding: 60px 0 40px;
 }
 
 
