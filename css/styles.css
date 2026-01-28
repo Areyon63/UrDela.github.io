@@ -27,6 +27,11 @@ a.link {
   
 }
 
+.active{
+  
+  color: var(--color-green);
+}
+
 .second-title{
   position: relative;
   font-size: 45px;
@@ -547,7 +552,7 @@ height: 24px;
 }
 
 /* Секция услуги*/
-.uslugy{
+    .uslugy{
   padding: 60px 0 40px;
 }
 
@@ -587,7 +592,7 @@ height: 24px;
 }
 
 /* Радиокнопки (точки-кнопки)*/
-.sldier__input {
+.slider__input {
   display: none;
   
 }
@@ -597,7 +602,7 @@ height: 24px;
   bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   
 }
@@ -606,20 +611,112 @@ height: 24px;
 .slider__controls-element{
   
   display: inline-block;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  border: 1px solid #000;
+  width: 40px;
+  height: 8px;
+  
+  background: rgb(0 0 0 / 10%) ;
+
   
   cursor: pointer;
   transition: all opacity .25s easy;
 }
 
 .slider__controls-element:hover{
-  border-color: rgb(0 0 0 / 50%);
-  background-color: var(--color-green);
+  background: color #2226ffff;
   
   
 }
+.slider__input:first-of-type:checked ~ .slider__wrapper:first-of-type{
+  margin-left: 0;
+  
+  
+  
+}
+
+.slider__input:nth-last-of-type(2):checked ~ .slider__wrapper:first-of-type{
+  margin-left: -100%;
+  
+  
+  
+}
+
+.slider__input:nth-last-of-type(3):checked ~ .slider__wrapper:first-of-type{
+  margin-left: -200%;
+  
+  
+  
+}
+
+.slider__input:nth-last-of-type(4):checked ~ .slider__wrapper:first-of-type{
+  margin-left: -300%;
+  
+  
+  
+}
+.slider__input:nth-last-of-type(5):checked ~ .slider__wrapper:first-of-type{
+  margin-left: -400%;
+  
+  
+  
+}
+
+
+/* Услуги */
+.uslugy {
+  padding: 60px 0 40px;
+  
+}
+
+.uslugy-filters{
+gap: 20px;
+font-size: 18px;
+margin-bottom: 40px;
+  
+}
+
+.uslugy-filter{
+  cursor: pointer;
+  
+  
+}
+.uslugy-filter:hover{
+  transition: color 0.35s easy;
+  color: #fff;
+  
+  
+}
+.uslugy-wrapper{
+display: flex;
+width: 80%;
+margin: 0 auto;
+  
+
+}
+
+
+
+.uslugy-wrapper .left{
+  
+  flex: 1 1 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20%;
+  
+  
+}
+.uslugy-wrapper .right {
+  flex: 1 1 30%;
+  margin-left: 100px;
+  }
+
+.uslugy-list__element{
+ flex: 1 1 20%; 
+ max-width: 20%;
+  box-shadow: 12px 5px;
+  
+}
+  
+  
 
 
