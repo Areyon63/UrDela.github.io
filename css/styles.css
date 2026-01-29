@@ -681,7 +681,7 @@ margin-bottom: 40px;
 }
 .uslugy-filter:hover{
   transition: color 0.35s easy;
-  color: #fff;
+  color: var(--color-green);
   
   
 }
@@ -697,25 +697,82 @@ margin: 0 auto;
 
 .uslugy-wrapper .left{
   
-  flex: 1 1 70%;
+  flex: 1 1 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20%;
+  justify-content: flex-start;
+
+  
+  padding-right: 20px;
+  flex-direction: column;
   
   
 }
+
 .uslugy-wrapper .right {
-  flex: 1 1 30%;
-  margin-left: 100px;
+  flex: 1 1 20%;
+  padding: 0 0 20px 12px;
+  
+  border-left: 1px solid var(--color-gray)
   }
 
-.uslugy-list__element{
- flex: 1 1 20%; 
- max-width: 20%;
-  box-shadow: 12px 5px;
+
+.uslugy-card__name{
+  display: flex;
+  margin-left: 100px;
   
 }
+
+
+
+
+
+
+.uslugy-list__row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.uslugy-list__element {
+  display: flex;
+  flex-direction: row;/* горизонтальное разделение: слева цвет, справа текст */
+  align-items: stretch;
+  flex: 1 1 31%;
+  max-width: 31%;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.3);
+  border-radius: 5px;
+  padding: 0;                 /* убираем внутренние паддинги, чтобы элементы занимали ровно оба блока */
+  margin-bottom: 15px;
+  min-height: 80px;
+  overflow: hidden;
+  transition: all .1s ease;
+  cursor: pointer;
+}
+.uslugy-list__element:hover{
+  outline: 2px solid var(--color-green);
+  transform: scale(105%)
+  
+  
+  
+}
+.uslugy-list__element-color {
+  width: 40px;                  
+  background: var(--color-green);           
+  border-radius: 5px 0 0 5px;
+}
+.uslugy-list__element-text {
+  padding: 10px;
+  background: #fff;
+  
+  display: flex;
+  align-items: center;
+  /* можно добавить гибкость, чтобы текст занимал оставшееся место */
+  flex: 1;
+}
+
+
   
   
 
