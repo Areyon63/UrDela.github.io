@@ -720,6 +720,40 @@ margin: 0 auto;
 .uslugy-card__name{
   display: flex;
   margin-left: 100px;
+  margin-bottom: 20px;
+  
+}
+
+.uslugy-card__title{
+  
+  
+  
+  
+}
+
+.uslugy-card__money-precent{
+  
+  margin-bottom: 13px;
+  
+  
+  
+}
+
+.uslugy-card__money-bar{
+  background: var(--color-green);
+  border-radius: 20px;
+  height: 5px;
+  width: 100%;
+  margin-bottom: 13px;
+  
+}
+
+.uslugy-card__description{
+  
+  color: var(--color-text);
+  text-align: justify;
+  
+  
   
 }
 
@@ -772,6 +806,22 @@ margin: 0 auto;
   flex: 1;
 }
 
+
+.contact-me{
+  padding: 40px 0;
+  
+}
+
+.contact-me__form{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.input-wrappe{
+  width: 48%;
+  display: inline-block;
+}
 
   
   
