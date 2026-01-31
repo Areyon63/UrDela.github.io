@@ -22,6 +22,7 @@
 /* Общие стили */
 a.link {
   color: var(--color-green);
+  fill:var(--color-green);
   text-decoration: none;
   transition: opacity 0.4s ease, background-color 0.3s ease, color 0.3s ease;
   
@@ -62,6 +63,8 @@ a.link {
 
 a.link:hover {
   opacity: 0.7;
+  
+  
   
   
 }
@@ -808,9 +811,34 @@ margin: 0 auto;
 
 
 .contact-me{
+  position: relative;
   padding: 40px 0;
   
 }
+
+.form-result{
+  
+  position: absolute;
+  inset: 0;
+  background: var(--border-color);
+}
+
+.blur{
+  
+  filter: blur(5px);
+  
+  
+}
+
+.form-result__content{
+  
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  color: #fff;
+  font-size: 50px;
+}
+
 
 .contact-me__form{
   width: 100%;
@@ -915,7 +943,7 @@ input.input:focus, .textarea:focus{
   
   cursor: pointer;
   opacity: .8;
-  transition: opacity .25s easy;
+  transition: opacity .25s ease;
 }
 
 .submit:hover{
@@ -923,6 +951,35 @@ input.input:focus, .textarea:focus{
   
 }
 
+/* footer */
+.footer{
+  padding: 40px 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.socials{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  
+  
+}
+
+.footer-about{
+  
+  color: var(--color-text);
+  
+}
+
+.social-element__link{
+  
+  display: inline-flex;
+  width: 40px;
+  
+}
   
 
 
