@@ -683,9 +683,9 @@ margin-bottom: 40px;
   
 }
 .uslugy-filter:hover{
-  transition: color 0.35s easy;
-  color: var(--color-green);
   
+  color: var(--color-green);
+  transition: color 0.35s easy;
   
 }
 .uslugy-wrapper{
@@ -789,7 +789,7 @@ margin: 0 auto;
 }
 .uslugy-list__element:hover{
   outline: 2px solid var(--color-green);
-  transform: scale(105%)
+  transform: scale(104%);
   
   
   
@@ -978,6 +978,7 @@ input.input:focus, .textarea:focus{
   
   display: inline-flex;
   width: 40px;
+  fill: var(--color-green)
   
 }
   
