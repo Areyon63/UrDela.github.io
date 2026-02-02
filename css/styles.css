@@ -10,8 +10,14 @@
   --color-gray: #9e9e9e;
   --color-black:#262626;
   --backround-grey: rgb(225, 225, 225, .3);
+  /** Media points **/
+--breakpoint-l: 1200px;
+--breakpoint-m: 992px;
+--breakpoint-s: 768px;
   
 }
+
+
 
 
 *:not(.icon){
@@ -145,6 +151,10 @@ justify-content: center;
   
   margin-left: -135px;
 }
+
+
+
+
 /* Настройка кнопки номера в глав меню */
 .num{
   display: flex;

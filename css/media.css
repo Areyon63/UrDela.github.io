@@ -1,0 +1,87 @@
+:root{
+  
+    /** Media points **/
+--breakpoint-l: 1200px;
+--breakpoint-m: 992px;
+--breakpoint-s: 768px;
+}
+
+@media screen and (max-width: 1350px){
+  
+  .logo {
+    font-size: 32px;
+    
+  }
+  
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+  /* Menu */
+  .logo {
+    font-size: 25px;
+    
+  }
+  
+  .menu-element{
+    
+    font-size: 18px;
+    margin-right: 18px;
+    
+  }
+  
+  .menu-element__link.home svg{
+    width: 20px;
+    height: 20px;
+    
+    
+  }
+  
+  /* About me*/
+  .about-me__image {
+    width: 250px;
+    height: 476px;
+  }
+  
+  .switcher{
+    font-size: 15px;
+  }
+  
+  .switcher-2{
+    font-size: 15px;
+  }
+  
+  .about-me__title{
+    font-size: 25px;
+    
+    
+  }
+  
+  
+  
+  .about-me__discraption, ul.about-me__extra-content {
+    
+    font-size: 15px;
+  }
+  
+  .second-title{
+    
+    font-size: 35px;
+  }
+  
+  .outline-card h3{
+        font-size: 1.9rem;
+
+    
+    
+  }
+  .outline0card p{
+    font-size: 1.1rem;
+
+    
+  }
+  
+  
+}
