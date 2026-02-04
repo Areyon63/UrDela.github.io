@@ -1,87 +1,228 @@
-:root{
-  
-    /** Media points **/
---breakpoint-l: 1200px;
---breakpoint-m: 992px;
---breakpoint-s: 768px;
-}
-
-@media screen and (max-width: 1350px){
-  
-  .logo {
-    font-size: 32px;
-    
-  }
-  
-}
-
-
-
-
-@media screen and (max-width: 1200px){
+/* Адаптивность для телефонов шириной 430px */
+@media screen and (max-width: 430px) {
   /* Menu */
   .logo {
-    font-size: 25px;
+    font-size: 10px;
+    margin-left: 3px;
+    margin-right: 57px;
     
   }
-  
-  .menu-element{
-    
-    font-size: 18px;
-    margin-right: 18px;
-    
+
+  .menu-element {
+    font-size: 11px;
+    margin-right: 8px;
   }
-  
-  .menu-element__link.home svg{
-    width: 20px;
-    height: 20px;
-    
-    
+
+  .menu-element__link.home svg {
+    width: 11px;
+    height: 11px;
   }
-  
-  /* About me*/
+
+  /* About me (карточки профиля) */
   .about-me__image {
-    width: 250px;
-    height: 476px;
+    width: 180px;
+    height: auto;
   }
-  
-  .switcher{
-    font-size: 15px;
-  }
-  
-  .switcher-2{
-    font-size: 15px;
-  }
-  
-  .about-me__title{
-    font-size: 25px;
-    
-    
-  }
-  
-  
-  
-  .about-me__discraption, ul.about-me__extra-content {
-    
-    font-size: 15px;
-  }
-  
-  .second-title{
-    
-    font-size: 35px;
-  }
-  
-  .outline-card h3{
-        font-size: 1.9rem;
 
+  .switcher { 
+    font-size: 10px;
+    margin-left: -22px;
+    margin-right: 68px;
     
     
+  
   }
-  .outline0card p{
-    font-size: 1.1rem;
+  
+  .switcher-2{ 
+    font-size: 10px;
+    margin-left: -22px;
+    margin-right: 68px;
+   
+    
+  
+  }
 
+  .name{
+    font-size: 26px;
+    margin-bottom: -10px;
+    
     
   }
   
   
+.description {
+  color: transparent;       /* скрываем исходный текст (визуально пусто) */
+  position: relative;
+  overflow: hidden;
+  
+  border-right: none;
+  
+  animation: none;
+}
+
+.description::before {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "Добро пожаловать в Правовой центр, давайте знакомиться!";
+  font-size: 15px;
+  padding-right: 100px;
+  line-height:1.5;
+  
+  /* новый контент */
+  color: #fff;                /* цвет нового текста */
+  
+  
+  width: 37%;
+  white-space: normal;        /* переносы строк, если нужен */
+  
+   
+}
+  
+  
+
+  .about-me__title { font-size: 12px; }
+  .about-me__discraption, ul.about-me__extra-content { font-size: 14px; }
+
+  .second-title { font-size: 28px; }
+
+  .outline-card h3 { font-size: 1.6rem; }
+  .outline-card p { font-size: 1.05rem; }
+
+  /* Сетка и тексты */
+  .card-grid { padding: 16px; gap: 16px; flex-direction: column; }
+
+  /* Контент секции Usługy и карточек услуг */
+  .uslugy { padding: 40px 0 40px; }
+
+  /* Улучшение читаемости секции услуг */
+  .uslugy-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    padding: 0 12px;
+    margin: 0 0 12px 0;
+  }
+
+  .uslugy-filter {
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,.15);
+    background: rgba(255,255,255,.8);
+  }
+
+  .uslugy-filter.active {
+    color: var(--color-green);
+  }
+
+  .uslugy-wrapper {
+    width: 100%;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .uslugy-list {
+    width: 100%;
+  }
+
+  .uslugy-list__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .uslugy-list__element {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .uslugy-card {
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  .uslugy-list__element-color {
+  width: 0px;                  
+  background: var(--color-green);           
+  border-radius: 5px 0 0 5px;
+}
+  
+
+  .uslugy-card__title {
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 0 8px;
+  }
+
+  .uslugy-card__money {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .uslugy-card__money-bar {
+    height: 6px;
+    background: #e5e5e5;
+    border-radius: 3px;
+    margin: 6px 0 8px;
+  }
+
+  .uslugy-card__money-precent {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .uslugy-card__description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* Форма обратной связи */
+  .contact-me {
+    padding: 20px 0;
+  }
+
+  .contact-me__form {
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  .input-wrapper {
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .textarea-wrapper { width: 100%; }
+
+  .label { font-size: 16px; }
+
+  .input, .textarea { width: 100%; }
+
+  .submit { display: block; width: 100%; text-align: center; }
+
+  .form-result__content { font-size: 24px; }
+
+  /* Футер и мелкие элементы */
+  .footer { padding: 20px 0; }
+  .block-center { justify-content: center; }
+
+  /* Общие моменты для читаемости текста в секциях */
+  p { line-height: 1.5; }
+  ul { line-height: 1.5; }
 }
