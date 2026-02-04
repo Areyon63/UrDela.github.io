@@ -41,6 +41,15 @@
     
   
   }
+  .header {
+  position: relative;
+  height: 80vh;
+  bottom: 80px;
+  margin-top: -16px;
+  background: url(../img/phone5.webp) no-repeat center;
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 80%, 50% 91%, 0 80%, 0 0);
+}
 
   .name{
     font-size: 26px;
@@ -129,7 +138,7 @@
   
   .number{
     margin-left: 2px;
-    margin-right: 3px;
+    margin-right: 4px;
   }
   .tel{
     
@@ -142,7 +151,7 @@
   .outline-card p { font-size: 1.05rem; }
 
   /* Сетка и тексты */
-  .card-grid { padding: 16px; gap: 16px; flex-direction: column; }
+  .card-grid { padding: 16px; gap: 16px; flex-direction: column; margin-left: 20px;}
 
   /* Контент секции Usługy и карточек услуг */
   .uslugy { padding: 40px 0 40px; }
@@ -184,10 +193,14 @@
   .uslugy-list__row {
     display: flex;
     flex-wrap: wrap;
+    
     gap: 8px;
     margin-bottom: 8px;
   }
-
+  .uslugy-card__name{
+    margin: 4px 0 4px 4px;
+    
+  }
   .uslugy-list__element {
     display: flex;
     align-items: center;
@@ -227,7 +240,7 @@
 
   .uslugy-card__money-bar {
     height: 6px;
-    background: #e5e5e5;
+    background: var(--color-green);
     border-radius: 3px;
     margin: 6px 0 8px;
   }
