@@ -82,8 +82,59 @@
   
   
 
-  .about-me__title { font-size: 12px; }
-  .about-me__discraption, ul.about-me__extra-content { font-size: 14px; }
+  .about-me__title { font-size: 20px; display: flex; align-items: center; justify-content: center; margin-right: 40px;}
+  .about-me__discraption { 
+    font-size: 15px; display: flex; align-items: center; justify-content: center; margin-right:10px;
+  
+  
+  
+  }
+  
+
+
+
+.about_me .right {
+  flex: 1 1 500%;
+  
+  
+  }
+  
+  .about-me__discraption{
+    padding-right: 34px;
+    
+    align-items: center;
+    
+  }
+  
+  .about-me__image{
+    
+    overflow: hidden;
+    margin-left: -1000px
+  
+  
+  
+  
+  
+}
+  
+  .bold{
+    font-size: 13px;
+    
+  }
+  
+  .block{
+    font-size: 13px;
+    
+  }
+  
+  .number{
+    margin-left: 2px;
+    margin-right: 3px;
+  }
+  .tel{
+    
+    
+  }
 
   .second-title { font-size: 28px; }
 
