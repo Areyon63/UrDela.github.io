@@ -1,11 +1,10 @@
-/* Адаптивность для телефонов шириной 430px */
+/* Адаптивность для телефонов шириной 430px (базовый шаблон) */
 @media screen and (max-width: 430px) {
   /* Menu */
   .logo {
     font-size: 10px;
     margin-left: 3px;
     margin-right: 57px;
-    
   }
 
   .menu-element {
@@ -25,125 +24,66 @@
   }
 
   .switcher { 
-    font-size: 10px;
-    margin-left: -22px;
+    font-size: 8.6px;
+    margin-left: -27px;
     margin-right: 68px;
-    
-    
-  
   }
   
   .switcher-2{ 
-    font-size: 10px;
-    margin-left: -22px;
+    font-size: 8.6px;
+    margin-left: -27px;
     margin-right: 68px;
-   
-    
-  
   }
+
   .header {
-  position: relative;
-  height: 80vh;
-  bottom: 80px;
-  margin-top: -16px;
-  background: url(../img/phone5.webp) no-repeat center;
-  background-size: cover;
-  clip-path: polygon(100% 0, 100% 80%, 50% 91%, 0 80%, 0 0);
-}
+    position: relative;
+    height: 80vh;
+    bottom: 80px;
+    margin-top: -16px;
+    background: url(../img/phone5.webp) no-repeat center;
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 80%, 50% 91%, 0 80%, 0 0);
+  }
 
   .name{
     font-size: 26px;
     margin-bottom: -10px;
-    
-    
   }
   
-  
-.description {
-  color: transparent;       /* скрываем исходный текст (визуально пусто) */
-  position: relative;
-  overflow: hidden;
-  
-  border-right: none;
-  
-  animation: none;
-}
-
-.description::before {
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  content: "Добро пожаловать в Правовой центр, давайте знакомиться!";
-  font-size: 15px;
-  padding-right: 100px;
-  line-height:1.5;
-  
-  /* новый контент */
-  color: #fff;                /* цвет нового текста */
-  
-  
-  width: 37%;
-  white-space: normal;        /* переносы строк, если нужен */
-  
-   
-}
-  
-  
-
-  .about-me__title { font-size: 20px; display: flex; align-items: center; justify-content: center; margin-right: 40px;}
-  .about-me__discraption { 
-    font-size: 15px; display: flex; align-items: center; justify-content: center; margin-right:10px;
-  
-  
-  
-  }
-  
-
-
-
-.about_me .right {
-  flex: 1 1 500%;
-  
-  
-  }
-  
-  .about-me__discraption{
-    padding-right: 34px;
-    
-    align-items: center;
-    
-  }
-  
-  .about-me__image{
-    
+  .description {
+    color: transparent;       /* скрываем исходный текст (визуально пусто) */
+    position: relative;
     overflow: hidden;
-    margin-left: -1000px
-  
-  
-  
-  
-  
-}
-  
-  .bold{
-    font-size: 13px;
-    
+    border-right: none;
+    animation: none;
   }
-  
-  .block{
-    font-size: 13px;
-    
+
+  .description::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "Добро пожаловать в Правовой центр, давайте знакомиться!";
+    font-size: 15px;
+    padding-right: 100px;
+    line-height: 1.5;
+    color: #fff;
+    width: 37%;
+    white-space: normal;
   }
-  
-  .number{
-    margin-left: 2px;
-    margin-right: 4px;
-  }
-  .tel{
-    
-    
-  }
+
+  .about-me__title { font-size: 20px; display: flex; align-items: center; justify-content: center; margin-right: 40px; }
+  .about-me__discraption { font-size: 15px; display: flex; align-items: center; justify-content: center; margin-right: 10px; }
+
+  .about_me .right { flex: 1 1 500%; }
+
+  .about-me__discraption{ padding-right: 34px; align-items: center; }
+
+  .about-me__image{ overflow: hidden; margin-left: -1000px; }
+
+  .bold{ font-size: 13px;  }
+  .block{ font-size: 13px;  }
+  .number{ margin-left: 2px; margin-right: 4px; }
+  .tel{ margin-left: 4px;}
 
   .second-title { font-size: 28px; }
 
@@ -151,7 +91,7 @@
   .outline-card p { font-size: 1.05rem; }
 
   /* Сетка и тексты */
-  .card-grid { padding: 16px; gap: 16px; flex-direction: column; margin-left: 20px;}
+  .card-grid { padding: 16px; gap: 16px; flex-direction: column; margin-left: 20px; }
 
   /* Контент секции Usługy и карточек услуг */
   .uslugy { padding: 40px 0 40px; }
@@ -166,111 +106,36 @@
     margin: 0 0 12px 0;
   }
 
-  .uslugy-filter {
-    font-size: 14px;
-    padding: 6px 10px;
-    border-radius: 6px;
-    border: 1px solid rgba(0,0,0,.15);
-    background: rgba(255,255,255,.8);
-  }
+  .uslugy-filter { font-size: 14px; padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,0,.15); background: rgba(255,255,255,.8); }
+  .uslugy-filter.active { color: var(--color-green); }
 
-  .uslugy-filter.active {
-    color: var(--color-green);
-  }
+  .uslugy-wrapper { width: 100%; padding: 0 12px; display: flex; flex-direction: column; gap: 16px; }
 
-  .uslugy-wrapper {
-    width: 100%;
-    padding: 0 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+  .uslugy-list { width: 100%; }
 
-  .uslugy-list {
-    width: 100%;
-  }
+  .uslugy-list__row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+  .uslugy-card__name{ margin: 4px 0 4px 4px; }
 
-  .uslugy-list__row {
-    display: flex;
-    flex-wrap: wrap;
-    
-    gap: 8px;
-    margin-bottom: 8px;
-  }
-  .uslugy-card__name{
-    margin: 4px 0 4px 4px;
-    
-  }
-  .uslugy-list__element {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    padding: 8px 10px;
-    font-size: 14px;
-  }
+  .uslugy-list__element { display: flex; align-items: center; justify-content: flex-start; width: 100%; padding: 8px 10px; font-size: 14px; }
 
-  .uslugy-card {
-    width: 100%;
-    margin: 0 auto;
-    padding: 12px;
-    box-sizing: border-box;
-    border: 1px solid rgba(0,0,0,.08);
-    border-radius: 8px;
-    background: #fff;
-  }
-  
-  .uslugy-list__element-color {
-  width: 0px;                  
-  background: var(--color-green);           
-  border-radius: 5px 0 0 5px;
-}
-  
+  .uslugy-card { width: 100%; margin: 0 auto; padding: 12px; box-sizing: border-box; border: 1px solid rgba(0,0,0,.08); border-radius: 8px; background: #fff; }
+  .uslugy-list__element-color { width: 0px; background: var(--color-green); border-radius: 5px 0 0 5px; }
 
-  .uslugy-card__title {
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 0 8px;
-  }
+  .uslugy-card__title { text-align: center; font-size: 16px; margin: 4px 0 8px; }
+  .uslugy-card__money { text-align: center; font-size: 14px; }
 
-  .uslugy-card__money {
-    text-align: center;
-    font-size: 14px;
-  }
+  .uslugy-card__money-bar { height: 6px; background: var(--color-green); border-radius: 3px; margin: 6px 0 8px; }
 
-  .uslugy-card__money-bar {
-    height: 6px;
-    background: var(--color-green);
-    border-radius: 3px;
-    margin: 6px 0 8px;
-  }
+  .uslugy-card__money-precent { font-weight: 600; font-size: 14px; }
 
-  .uslugy-card__money-precent {
-    font-weight: 600;
-    font-size: 14px;
-  }
-
-  .uslugy-card__description {
-    font-size: 14px;
-    line-height: 1.4;
-  }
+  .uslugy-card__description { font-size: 14px; line-height: 1.4; }
 
   /* Форма обратной связи */
-  .contact-me {
-    padding: 20px 0;
-  }
+  .contact-me { padding: 20px 0; }
 
-  .contact-me__form {
-    width: 100%;
-    padding: 0 12px;
-    box-sizing: border-box;
-  }
+  .contact-me__form { width: 100%; padding: 0 12px; box-sizing: border-box; }
 
-  .input-wrapper {
-    width: 100%;
-    display: block;
-    margin-bottom: 12px;
-  }
+  .input-wrapper { width: 100%; display: block; margin-bottom: 12px; }
 
   .textarea-wrapper { width: 100%; }
 
@@ -289,4 +154,127 @@
   /* Общие моменты для читаемости текста в секциях */
   p { line-height: 1.5; }
   ul { line-height: 1.5; }
+}
+
+/* 428px */
+@media screen and (max-width: 428px) {
+  /* повторяем базовую сетку 430px, но плавно уменьшаем чуть больше */
+  .logo { font-size: 9.8px; }
+  .name { font-size: 25px; }
+  .description { font-size: 14.8px; }
+  .about-me__image { width: 170px; } 
+  .header { height: 78vh; }
+  .block{letter-spacing: -0.5px}
+  /* прочие параметры по аналогии с 430: сохраняем стиль без разрывов */
+}
+ 
+/* 414px */
+@media screen and (max-width: 414px) {
+  .logo { font-size: 9.7px; }
+  .name { font-size: 24px; }
+  .switcher { 
+    font-size: 8.7px;
+    margin-left: -27.5px;
+    margin-right: 68px;
+  }
+  
+  .switcher-2{ 
+    font-size: 8.7px;
+    margin-left: -27.5px;
+    margin-right: 68px;
+  }
+  .block{letter-spacing: -0.5px}
+  .description { font-size: 14px; margin-right: 35px; }
+  .about-me__image { width: 165px; }
+  .second-title { font-size: 27px; }
+  .card-grid{ margin-left: 11px; }
+  .outline-card h3 { font-size: 1.55rem; }
+  .outline-card p { font-size: 1.04rem; }
+}
+
+/* 390px */
+@media screen and (max-width: 390px) {
+  .logo { font-size: 9px; }
+  .menu-element { font-size: 10px; }
+  .name { font-size: 22px; }
+  .description { font-size: 13.5px; }
+  .about-me__image { width: 156px; }
+  .second-title { font-size: 26px; }
+  .block{font-size: 12.2px;}
+  .bold{font-size: 13px;}
+  .card-grid{margin-left: -2px;}
+  .outline-card h3 { font-size: 1.4rem; }
+  .outline-card p { font-size: 1.02rem; }
+}
+
+/* 375px */
+@media screen and (max-width: 375px) {
+  .logo { font-size: 9px; }
+  
+  .switcher { 
+    font-size: 7.3px;
+    margin-left: -28.9px;
+    margin-right: 68px;
+  }
+  
+  .switcher-2{ 
+    font-size: 7.3px;
+    margin-left: -28.9px;
+    margin-right: 68px;
+  }
+  
+  .bold{
+    font-size: 15px;
+    
+  }
+  .block{
+    font-size: 15px;
+    
+  }
+  
+  .block__min{
+    font-size: 0;
+    
+    
+  }
+  .block__min::after{
+    content: "ТГУ ";
+    font-size: 15px;
+    
+  }
+  
+  
+  .menu-element { font-size: 10px; }
+  .name { font-size: 21px; }
+  .description { font-size: 13px; }
+  .about-me__image { width: 150px; }
+  .second-title { font-size: 25px; }
+  .card-grid{margin-left: -9px;}
+  .outline-card h3 { font-size: 1.3rem; }
+  .outline-card p { font-size: 1rem; }
+}
+
+/* 360px */
+@media screen and (max-width: 360px) {
+  .logo { font-size: 8.5px; }
+  .menu-element { font-size: 9.5px; }
+  .name { font-size: 19px; }
+  .description { font-size: 9.5px;  word-break: normal; display: flex; align-items: center; justify-content: center; margin-left: -190px;}
+  .about-me__image { width: 140px; }
+  .second-title { font-size: 24px; }
+  .outline-card h3 { font-size: 1.2rem; }
+  .outline-card p { font-size: 0.98rem; }
+}
+
+/* 320px */
+@media screen and (max-width: 320px) {
+  .logo { font-size: 8px; letter-spacing: -0.2px; }
+  .menu-element { font-size: 9px; }
+  .switcher, .switcher-2 { font-size: 8.5px; }
+  .name { font-size: 18px; }
+  .description { font-size: 12px; }
+  .second-title { font-size: 22px; }
+  .about-me__title { font-size: 17px; }
+  .about-me__discraption { font-size: 14px; }
+  .outline-card h3 { font-size: 1.1rem; }
 }
