@@ -165,7 +165,7 @@ justify-content: center;
 }
 
 .switcher {
-  margin-left: 72px;
+  margin-left: -100px;
   margin-right: -93px;
   background: none; /* Убираем фон */
   border: none;     /* Убираем рамку */
@@ -182,7 +182,7 @@ justify-content: center;
 }
 
 .switcher-2 {
-  margin-left: 72px;
+  margin-left: -100px;
   margin-right: -93px;
   background: none; /* Убираем фон */
   border: none;     /* Убираем рамку */

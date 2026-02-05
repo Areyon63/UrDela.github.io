@@ -260,8 +260,11 @@
   .menu-element { font-size: 9.5px; }
   .name { font-size: 19px; }
   .description { font-size: 9.5px;  word-break: normal; display: flex; align-items: center; justify-content: center; margin-left: -190px;}
-  .about-me__image { width: 140px; }
+  .about-me__image { width: 140px; visibility: hidden;}
+  .about-me__title{font-size: 18px;}
+  .about-me__discraption{padding-right: 8px;}
   .second-title { font-size: 24px; }
+  .card-grid{margin-left: -18px;}
   .outline-card h3 { font-size: 1.2rem; }
   .outline-card p { font-size: 0.98rem; }
 }
@@ -272,7 +275,7 @@
   .menu-element { font-size: 9px; }
   .switcher, .switcher-2 { font-size: 8.5px; }
   .name { font-size: 18px; }
-  .description { font-size: 12px; }
+  .description:before{font-size: 15px; letter-spacing: -1px; margin-left: -40px;}
   .second-title { font-size: 22px; }
   .about-me__title { font-size: 17px; }
   .about-me__discraption { font-size: 14px; }
