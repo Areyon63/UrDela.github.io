@@ -1,4 +1,7 @@
-/* Адаптивность для телефонов шириной 430px (базовый шаблон) */
+@media screen and (max-width: 1541px){
+  .outline-card h3{font-size:  30px;}
+  
+}
 @media screen and (max-width: 430px) {
   /* Menu */
   .logo {
@@ -271,13 +274,14 @@
 
 /* 320px */
 @media screen and (max-width: 320px) {
-  .logo { font-size: 8px; letter-spacing: -0.2px; }
-  .menu-element { font-size: 9px; }
+  .logo { font-size: 8px; letter-spacing: -0.2px; display: none; visibility: hidden;}
+  .menu-element { font-size: 9px; margin-left: 60px; margin-right: -49px; gap: 2px;}
   .switcher, .switcher-2 { font-size: 8.5px; }
   .name { font-size: 18px; }
   .description:before{font-size: 15px; letter-spacing: -1px; margin-left: -40px;}
   .second-title { font-size: 22px; }
-  .about-me__title { font-size: 17px; }
+  .about-me__title { font-size: 16px; }
   .about-me__discraption { font-size: 14px; }
+  .card-grid{margin-left: -38px;}
   .outline-card h3 { font-size: 1.1rem; }
 }
