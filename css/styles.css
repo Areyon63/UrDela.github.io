@@ -462,6 +462,10 @@ height: 24px;
 
 
 /* карточки с контуром и прозрачным фоном ps: Желательно как-то это оптимизировать(сократить и разбить на подклассы что-ли, но не факт),чтобы возможно в будущем добавить анимацию, но не придумал как, да и много анимаций тоже такое себе. Так что отказался от этой затеи с анимецией и принебрег с классами и их характеристиками*/
+.m-text{
+  margin-bottom: 900px;
+  
+}
 .outline-card {
   width: 362px;
   height: 300px;
@@ -491,7 +495,7 @@ height: 24px;
 
   display: block;
   
-  
+  margin-bottom: -3px;
   margin-left: auto;
   margin-right: auto;
           
@@ -508,7 +512,7 @@ height: 24px;
 
 .outline-card h3 {
   padding-top: 20px; 
-  margin: 0 0 19px;
+  margin: 0 0 17px;
   font-size: 2rem;
   line-height: 1.25;
   display: flex;
@@ -525,7 +529,8 @@ height: 24px;
   font-size: 1.19rem;
   line-height: 1.51;
   padding-right: -7px;
-  color: var(--color-text)
+  color: var(--color-text);
+  margin: 0 0 6px;
   
 }
 
@@ -755,6 +760,9 @@ margin: 0 auto;
   
   
   
+}
+.uslugy-card__name{
+  margin-left: 1px;
 }
 
 .uslugy-card__money-precent{
