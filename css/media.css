@@ -115,7 +115,7 @@
   .uslugy-wrapper { width: 100%; padding: 0 12px; display: flex; flex-direction: column; gap: 16px; }
 
   .uslugy-list { width: 100%; }
-
+  .uslugy-list__element-text{font-size: 13px; letter-spacing: -1px;}
   .uslugy-list__row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
   .uslugy-card__name{ margin: 4px 0 4px 4px; }
 
@@ -123,7 +123,7 @@
 
   .uslugy-card { width: 100%; margin: 0 auto; padding: 12px; box-sizing: border-box; border: 1px solid rgba(0,0,0,.08); border-radius: 8px; background: #fff; }
   .uslugy-list__element-color { width: 0px; background: var(--color-green); border-radius: 5px 0 0 5px; }
-
+  
   .uslugy-card__title { text-align: center; font-size: 16px; margin: 4px 0 8px; }
   .uslugy-card__money { text-align: center; font-size: 14px; }
 

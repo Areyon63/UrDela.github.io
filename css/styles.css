@@ -803,7 +803,7 @@ margin: 0 auto;
 }
 
 .uslugy-list__element.active { 
-  background: #00ff5d;
+  background: var(--color-green);
 }
 .uslugy-list__element {
   display: flex;
