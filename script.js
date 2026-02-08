@@ -143,3 +143,80 @@
   document.addEventListener('DOMContentLoaded', init);
 
 })();
+
+// Обработка формы обратной связи
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('.contact-me__form');
+    const formResult = document.querySelector('.form-result');
+    const contactWrapper = document.querySelector('.contact-me__wrapper');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Показываем индикатор загрузки
+            const submitBtn = contactForm.querySelector('.submit');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Отправка...';
+            submitBtn.disabled = true;
+            
+            // Получаем данные из формы
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('meassage').value;
+            
+            // Параметры для отправки через EmailJS
+            const templateParams = {
+                to_email: 'urist.yurga@gmail.com',
+                from_name: name,
+                from_email: email,
+                message: message,
+                reply_to: email,
+                date: new Date().toLocaleString('ru-RU')
+            };
+            
+            // Отправка через EmailJS с вашим template_id
+            emailjs.send('default_service', 'template_v91x3c7', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Показываем сообщение об успешной отправке
+                    showSuccessMessage();
+                    
+                    // Очищаем форму
+                    contactForm.reset();
+                    
+                    // Восстанавливаем кнопку
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Произошла ошибка при отправке сообщения. Пожалуйста, попробуйте еще раз.');
+                    
+                    // Восстанавливаем кнопку
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
+        });
+    }
+    
+    function showSuccessMessage() {
+        // Показываем блок с сообщением об успешной отправке
+        formResult.style.display = 'flex';
+        contactWrapper.classList.add('blur');
+        
+        // Скрываем сообщение через 5 секунд
+        setTimeout(function() {
+            formResult.style.display = 'none';
+            contactWrapper.classList.remove('blur');
+        }, 5000);
+    }
+    
+    // Добавляем обработчик для закрытия сообщения по клику
+    if (formResult) {
+        formResult.addEventListener('click', function() {
+            formResult.style.display = 'none';
+            contactWrapper.classList.remove('blur');
+        });
+    }
+});
