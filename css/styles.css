@@ -1062,10 +1062,15 @@ input.input:focus, .textarea:focus{
   color: var(--color-text);
   
 }
-
+.socials{
+flex-direction: column; 
+  
+}
 .social-element__link{
   
   display: inline-flex;
+  margin-top: -25px;
+ 
   width: 40px;
   fill: var(--color-green)
   
