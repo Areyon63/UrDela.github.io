@@ -1,6 +1,10 @@
 @media screen and (max-width: 1541px){
   .outline-card h3{font-size:  30px;}
   
+  .logo{font-size: 25px; margin-left: -60px;}
+  .name{font-size: 40px;}
+  .description{font-size: 21px; width: 1090px;}
+  
 }
 @media screen and (max-width: 430px) {
   /* Menu */

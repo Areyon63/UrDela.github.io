@@ -265,11 +265,11 @@ justify-content: center;
 
 .description {
   display: inline-block;
-  width: 1345px;
+  width: 1300px;
   font-size: 25px;
   
   font-family: cursier, monospace;
-  line-height: 1.5em;
+  line-height: 1.4em;
   white-space: nowrap;
   
   overflow: hidden;
@@ -352,7 +352,7 @@ justify-content: center;
 }
 
 .about-me__image{
-  width: 320px;
+  width: 370px;
   height: 546px; 
   margin-left: auto;
   border-radius: 10px;
